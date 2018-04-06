@@ -1,0 +1,14 @@
+.jumbotron {
+  background-color: grey;
+  min-height: 300px;
+  color: black;
+  text-align: center;
+}
+
+/*#player1 {
+  float: left;
+}
+
+#player2 {
+  float: right;
+}*/

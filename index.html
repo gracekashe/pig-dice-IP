@@ -5,23 +5,89 @@
   <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
   <link type="text/css" rel="stylesheet" href="css/styles.css">
   <meta charset="utf-8">
-  <title>dice roll</title>
+  <title>pigdice'</title>
 </head>
 
 <body>
-  <div id="die1" class=" dice"></div>
-  <div id="die2" class=" dice"></div>
-  <button onclick="rolldice()" name="button"> Roll dice</button>
-  <h2 id="status" style="clear: left;"></h2>
+  <div class="jumbotron">
+    <h2>PIG DICE</h2>
+  </div>
+
+
+
+  <div class="row">
+
+    <form class="players">
+
+      <div class="col-md-6">
+
+        <div class="form-group" id="playerOne">
+
+          <label for="">player1's turn</label>
+
+          <input type="text" class="form-control" id="p1">
+
+
+
+
+        </div>
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="form-group" id="playerTwo">
+
+          <label for="">player2</label>
+
+          <input type="text" class="form-control" id="p2">
+
+
+
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-danger" id="begin"> Begin</button>
+
+    </form>
+  </div>
+
+
+  <div class="row" id="player-player">
+
+    <div class="col-md-6">
+      <button type="submit" class="btn btn-info" id="newGame">New Game</button>
+      <h2 id="player1name">player1</h2>
+      <button type="submit" class="btn btn-danger" id="play1">Roll dice</button>
+      <button type="submit" class="btn btn-danger" id="play1-hold">Hold</button>
+
+      <div class="dice-roll">
+        <h2>Dice-roll: <span class="diceroll-1"></span></h2>
+        <p>Round: <span class="round-trial-1"></span></p>
+        <p>Total: <span class="total-1"></span></p>
+      </div>
+
+    </div>
+
+    <div class="col-md-6">
+      <h2 id="player2name">player2</h2>
+      <button type="submit" class="btn btn-danger" id="play2">Roll dice</button>
+      <button type="submit" class="btn btn-danger" id="play2-hold">Hold</button>
+
+      <div class="dice-roll">
+        <h2>Dice-roll: <span class="diceroll-2"></span></h2>
+        <p>Round: <span class="round-trial-2"></span></p>
+        <p>Total: <span class="total-2"></span></p>
+      </div>
+    </div>
+
+  </div>
+
+
 
 
 
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/scripts.js"></script>
-
-
-
 </body>
-
 
 </html>
