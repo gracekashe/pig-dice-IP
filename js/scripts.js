@@ -66,7 +66,7 @@ $(document).ready(function() {
     player1.playerName = player1Name;
     player2.playerName = player2Name;
   });
-  $("#button#newGame").click(function(event) {
+  $("#button#new-Game").click(function(event) {
     event.preventDefault();
     $("#player-player").hide();
     clearValues();
@@ -79,7 +79,7 @@ $(document).ready(function() {
     $(".total-2").empty();
     $(".diceroll-2").empty();
 
-    $("#players").show();
+    $(".players").show();
   });
 
   $("button#play1").click(function(event) {

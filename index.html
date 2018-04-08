@@ -11,6 +11,7 @@
 <body>
   <div class="jumbotron">
     <h2>PIG DICE</h2>
+    <!-- <img src="images/pigdice.jpg" alt="image of dice" style="size=13%;"> -->
   </div>
 
 
@@ -18,9 +19,8 @@
   <div class="row">
 
 
-
     <form class="players">
-
+      <!-- //column one start// -->
       <div class="col-md-6">
 
         <div class="form-group" id="playerOne">
@@ -29,11 +29,10 @@
 
           <input type="text" class="form-control" id="p1">
 
-
-
-
         </div>
+
       </div>
+      <!-- //column 2 from players// -->
 
       <div class="col-md-6">
 
@@ -43,47 +42,56 @@
 
           <input type="text" class="form-control" id="p2">
 
-
-
         </div>
-      </div>
 
+      </div>
+      <!-- //end of column two// -->
       <button type="submit" class="btn btn-danger" id="begin"> Begin</button>
 
     </form>
-
+    <!-- //end of form// -->
   </div>
+  <!-- end of first row -->
 
-
+  <!-- start of second row -->
   <div class="row" id="player-player">
 
     <div class="col-md-6">
-      <button type="submit" class="btn btn-info" id="newGame">New Game</button>
+
+      <button type="submit" class="btn btn-info" id="new-Game">New Game</button>
 
       <h2 id="player1name">player1</h2>
+
       <button type="submit" class="btn btn-danger" id="play1">Roll dice</button>
       <button type="submit" class="btn btn-danger" id="play1-hold">Hold</button>
 
-      <div class="dice-roll">
 
+      <div class="dice-roll">
 
         <p>Dice-roll: <span class="diceroll-1"></span></p>
         <p>Round: <span class="round-trial-1"></span></p>
         <p>Total: <span class="total-1"></span></p>
+
       </div>
 
     </div>
 
+    <!-- second column for second row -->
     <div class="col-md-6">
+
       <h2 id="player2name">player2</h2>
+
       <button type="submit" class="btn btn-danger" id="play2">Roll dice</button>
       <button type="submit" class="btn btn-danger" id="play2-hold">Hold</button>
 
       <div class="dice-roll">
+
         <p>Dice-roll: <span class="diceroll-2"></span></p>
         <p>Round: <span class="round-trial-2"></span></p>
         <p>Total: <span class="total-2"></span></p>
+
       </div>
+
     </div>
 
   </div>

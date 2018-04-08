@@ -1,14 +1,8 @@
 .jumbotron {
-  background-color: grey;
+  background-image: url("../images/pigdice.jpg");
+  background-size: 550px;
   min-height: 300px;
-  color: black;
+  color: white;
   text-align: center;
+  font-family: cursive;
 }
-
-/*#player1 {
-  float: left;
-}
-
-#player2 {
-  float: right;
-}*/
